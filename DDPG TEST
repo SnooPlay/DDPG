@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="https://drive.google.com/drive/u/5/folders/16ZcZMJ-PiKUIiBKGtMPdwZpylImHl5a9">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://hipatia.fclar.unesp.br/3x/css/app.css">
+    <title>Dicionário Digital Grego-Português</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /*! normalize.css */
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main id="main">
+        <div class="container-fluid">
+            <div class="row  d-flex  mt-4">
+                <div class="col-md-4">
+                    <a style="position: absolute" href="http://hipatia.fclar.unesp.br/3x/" ><img id="logo-img" src="http://hipatia.fclar.unesp.br/3x/media/ddgp.png" height="100px"></a>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="flex justify-center pt-8 sm:pt-0">
+                            <span class="ml-2 mr-2 text-gray-700">English</span>
+                                    <a class="ml-1 underline ml-2 mr-2" href="language/pt-BR">
+                    <span>Português</span>
+                </a>
+                </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row height d-flex justify-content-center mt-2">
+        <div class="col-md-6">
+            <form id="mainsearch" method="GET" action="http://hipatia.fclar.unesp.br/3x/search" autocomplete="off">
+                <div class="form">
+                    <div class="input-group">
+                        <input type="text" name="pattern" class="form-control" placeholder="Search here" onkeyup="autoComplete(this);" value="" autocomplete="off">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="submit" value="Search"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+            <div class="row d-flex justify-content-center mt-2">
+        <div class="col-md-6">
+            <div class="search-help shadow p-3 mb-2 bg-gray-800 rounded">
+                <b>! Type in unicode polytonic Greek using beta code as indicated below</b>:
+                <table class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <td>/a =&gt; ά</td>
+                        <td>\a =&gt; ὰ</td>
+                        <td>=a =&gt; ᾶ</td>
+                        <td>)a =&gt; ἀ</td>
+                    </tr>
+                    <tr>
+                        <td>(a =&gt; ἁ</td>
+                        <td>!a =&gt; ᾳ</td>
+                        <td>+i =&gt; ϊ</td>
+                        <td>h =&gt; η</td>
+                    </tr>
+                    <tr>
+                        <td>q =&gt; θ</td>
+                        <td>x =&gt; χ</td>
+                        <td>c =&gt; ξ</td>
+                        <td>z = ζ</td>
+                    </tr>
+                    <tr>
+                        <td>j =&gt; ψ</td>
+                        <td>w =&gt; ω</td>
+                        <td>s =&gt; σ, ς</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <i>Combine punctuation marks when necessary e.g. )/a =&gt; ἄ</i>
+            </div>
+        </div>
+    </div>
+    
+    
+            <div class="row d-flex justify-content-center align-items-center mt-2">
+                <div class="col-md-6 text-center my-auto">
+                    <div class="card title-card card-block d-flex w-100 shadow-lg bg-white rounded mb-4" >
+                        <div class="card-body align-items-center d-flex justify-content-center">
+                            <h1 class="card-title">
+                                <strong>Greek-Portuguese Digital Dictionary</strong><br/>
+    
+                                <!--<small>Find the word you are looking for more conveniently and quickly</small>-->
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="result-card card w-100 shadow-lg bg-white rounded mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <span class="gword">ζῴην</span>
+                            </h5>
+                            <p class="card-text">
+                                <p style="text-align: justify;">
+                                    <span title="optativo" class="abbrev">opt.</span> <span title="presente" class="abbrev">pres.</span> de ζήω.
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="foot">
+        <div class="wrap">
+            <div id="footer">
+                <div class="footitem">
+                    <span><b><i>Agradecimentos</i></b> às coordenadoras dos volumes impressos: Daisi Malhadas, M. Celeste C. Dezotti e M. Helena M. Neves e <a href="javascript:void()" data-bs-toggle="modal" data-bs-target="#exampleModal" >aos autores</a>;  à  <a target="_blank" href="https://www.atelie.com.br/">Ateliê</a>; à colaboração da equipe do <a href="http://www.perseus.tufts.edu/hopper/" target="_blank" data-content="http://www.perseus.tufts.edu/hopper/" data-type="external">Perseus Project, Tufts U.</a> e <a href="http://www.dh.uni-leipzig.de/wo/" target="_blank" data-content="http://www.dh.uni-leipzig.de/wo/" data-type="external">Humboldt Chair of Digital Humanities, U. Leipzig</a>: G. Crane, M. Berti, B.Almas e T. Yousef.</span>
+                </div>
+                <div class="footitem">
+                    <span><b><i>Apoios</i></b> PPG em Linguística e Língua Portuguesa, Área de grego, Departamento de Linguística e DTI da </span>
+                    <a href="http://www.fclar.unesp.br/" target="_blank" data-content="http://www.fclar.unesp.br" data-type="external">FCL-Ar /UNESP</a>
+                    CNPq, FAPESP
+                </div>
+                <div class="footitem">
+                    <a target="_blank" href="https://github.com/aniseferreira/Grc-Por-DigDict">Projeto Aberto em Letras Clássicas Digitais</a> FCLAr/UNESP de Anise Ferreira (CNPq/PQ) e M. Celeste  C. Dezotti.
+                    Desenvolvedor: Ercy Moreira Neto (2022); Rúbens A. Rodrigues (até 2021).  Logotipo: Davi Rosa. <b><i>Contato</i></b>: <a href="mailto:anise.ferreira@unesp.br">anise.ferreira@unesp.br</a>
+                </div>
+    
+                <div class="footitem">
+                    <span>©2017 - 2022 Sob licença <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" data-content="http://creativecommons.org/licenses/by-nc-sa/4.0/" data-type="external">Creative Commons Atribuição-NãoCommercial-CompartilhaIgual 4.0 International.</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Autores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="background-color: #FFF; text-align: center">
+                        <h4><strong>AUTORES DOS VOLUMES IMPRESSOS</strong></h4>
+    
+                        <h5><strong>UNESP</strong></h5>
+                        Daisi Malhadas<br>
+                        Maria Helena M. Neves<br>
+                        M.Celeste Dezotti<br>
+                        Edvanda B. Rosa<br>
+                        Cláudia Féral<br>
+                        Fernando B. dos Santos<br>
+                        Anise D'O. Ferreira<br>
+                        Clóvis B. de Morais<br>
+    
+                        <h5><strong>USP</strong></h5>
+                        Adriane S. Duarte<br>
+                        Anna Lia A.A.Prado<br>
+                        Gilda M. Reale Starzynski<br>
+    
+                        <h5><strong>UFRJ</strong></h5>
+                        M. Adília P. de A.Starling<br>
+                        Nely M. Pessanha<br>
+                        Suzana T. M. de Melo<br>
+    
+                        <h5><strong>UFMG</strong></h5>
+                        Tereza Virgínia R. Barbosa<br>
+    
+                        <h5><strong>UFF</strong></h5>
+                        Glória B. Onelley<br>
+                        Sílvia Damasceno<br><br><br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/greekcode.js?version=2"></script>
+<script type="text/javascript" src="js/autocomplete.js"></script>
+</html>
